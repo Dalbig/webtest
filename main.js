@@ -12,3 +12,12 @@ function mobileHeader() {
     document.querySelector('h1').innerHTML = "WKWebView Mobile";
 		document.querySelector('h1').color = 'red';
 }
+
+
+function testLaunchTVPlugin() {
+
+}
+
+function testUseAutoCropLib() {
+
+}
