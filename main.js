@@ -50,6 +50,8 @@ window.callbackForNative = function(data) {
     if (obj.status != 200) {
         document.body.style.backgroundColor = "red";
         return
+    }else {
+        document.body.style.backgroundColor = "green";
     }
 
     var imageData = obj.data.imageData
@@ -58,9 +60,7 @@ window.callbackForNative = function(data) {
 }
 
 function addImage(base) {
-    document.body.style.backgroundColor = "green";
-
-    let image=new Image();
+    let image= new Image();
     image.src=`data:image/png; base64,${base}`
     document.body.appendChild(image);
 }
