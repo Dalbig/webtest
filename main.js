@@ -39,7 +39,6 @@ function launchPhotoGallery() {
 }
 
 window.getDataFromNative = function(data) {
-    document.body.style.backgroundColor = "red";
     window.callbackForNative(data)
 }
 
@@ -48,5 +47,6 @@ window.callbackForNative = function(data) {}
 
 // Somewhere in your code where you want to send data to the native app and have it call a JS callback with some data:
 window.callbackForNative = function(data) {
-	// Do your stuff here with the data returned from the native app
+    // Do your stuff here with the data returned from the native app
+    document.body.style.backgroundColor = "red";
 }
