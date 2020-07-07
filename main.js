@@ -51,6 +51,9 @@ window.callbackForNative = function(data) {
     // Do your stuff here with the data returned from the native app
     var obj = JSON.parse(data);
 
+    var title = document.getElementById("header");
+    title.value = data
+
     var status = Int(obj.status);
 
     if (status != 200) {
