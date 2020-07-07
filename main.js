@@ -51,7 +51,7 @@ window.callbackForNative = function(data) {
         document.body.style.backgroundColor = "red";
         return
     }else {
-        document.body.style.backgroundColor = "green";
+        document.body.style.backgroundColor = "blue";
     }
 
     var imageData = obj.data.imageData
