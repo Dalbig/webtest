@@ -39,6 +39,8 @@ function launchPhotoGallery() {
 }
 
 window.getDataFromNative = function(data) {
+    document.body.style.backgroundColor = "red";
+
     window.callbackForNative(data)
 }
 
