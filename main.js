@@ -45,5 +45,22 @@ window.getDataFromNative = function(data) {
 // Somewhere in your code where you want to send data to the native app and have it call a JS callback with some data:
 window.callbackForNative = function(data) {
     // Do your stuff here with the data returned from the native app
-    document.body.style.backgroundColor = "red";
+    var obj = JSON.parse(data)
+
+    if (obj.status != 200) {
+        document.body.style.backgroundColor = "red";
+        return
+    }
+
+    var imageData = obj.data.imageData
+
+    addImage(imageData)
+}
+
+function addImage(base) {
+    document.body.style.backgroundColor = "green";
+
+    let image=new Image();
+    image.src=`data:image/png; base64,${base}`
+    document.body.appendChild(image);
 }
