@@ -54,9 +54,7 @@ window.callbackForNative = function(data) {
     // var title = document.getElementById("header");
     // title.value = data
 
-    var status = Int(obj.status);
-
-    if (status != 200) {
+    if (obj.status != 200) {
         document.body.style.backgroundColor = "red";
         return;
     }
