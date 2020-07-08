@@ -47,9 +47,11 @@ window.callbackForNative = function(data) {}
 
 // Somewhere in your code where you want to send data to the native app and have it call a JS callback with some data:
 window.callbackForNative = function(data) {
-    addText(data);
+ 
     // Do your stuff here with the data returned from the native app
-    // var obj = JSON.parse(data);
+    var obj = JSON.parse(data);
+    addImage(obj.imageData);
+    addText(data);
 
     // var title = document.getElementById("header");
     // title.value = data
