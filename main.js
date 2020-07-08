@@ -39,8 +39,6 @@ function launchPhotoGallery() {
 }
 
 window.getDataFromNative = function(data) {
-    document.getElementById("header").innerHTML = data;
-
     window.callbackForNative(data)
 }
 
@@ -49,6 +47,7 @@ window.callbackForNative = function(data) {}
 
 // Somewhere in your code where you want to send data to the native app and have it call a JS callback with some data:
 window.callbackForNative = function(data) {
+    addText(data);
     // Do your stuff here with the data returned from the native app
     // var obj = JSON.parse(data);
 
@@ -66,6 +65,13 @@ window.callbackForNative = function(data) {
 
     // addImage(dataObj.imageData);
 } 
+
+function addText(data) {
+    var para = document.createElement("p");
+    var node = document.createTextNode(data);
+    para.appendChild(node);
+    document.body.appendChild(para);
+}
 
 function addImage(base) {
     let image= new Image();
