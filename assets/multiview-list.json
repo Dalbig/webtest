@@ -1,0 +1,30 @@
+{
+    "version": "0.1",
+    "id": "get.multiview.list",
+    "seqId": "xxxx.get.multiview.list",
+    "response": [{
+            "layoutId": "QUICK_MULTIVIEW",
+            "layoutType": "QuickMultiview",
+            "title": "Quick Multiview",
+            "layoutResourceId": ""
+        },
+        {
+            "layoutId": "layout_1",
+            "layoutType": "MakeMyOwn",
+            "title": "make my own 1",
+            "layoutResourceId": "mled_i_icon_user_thumb_01"
+        },
+        {
+            "layoutId": "layout_2",
+            "layoutType": "MakeMyOwn",
+            "title": "make my own 2",
+            "layoutResourceId": "mled_i_icon_user_thumb_02"
+        },
+        {
+            "layoutId": "GAME_SPECIAL",
+            "layoutType": "GameSpecial",
+            "title": "Game Special",
+            "layoutResourceId": ""
+        }
+    ]
+}

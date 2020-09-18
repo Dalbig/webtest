@@ -1,0 +1,38 @@
+{
+    "version": "0.1",
+    "id": "get.multiview.info",
+    "seqId": "xxxx.get.multiview.info",
+    "response": {
+        "layoutId": "layout_1",
+        "layoutName": "LeftMain",
+        "layoutCount": 3,
+        "focusedSource": "HDMI0",
+        "extSources": [{
+                "id": "HDMI1",
+                "order": "0",
+                "name": "tv",
+                "powerStatus": "on",
+                "provider": "tv",
+                "type": "CABLE_BOX"
+            },
+            {
+                "id": "HDMI2",
+                "order": "1",
+                "name": "olleh tv",
+                "powerStatus": "on",
+                "provider": "olleh",
+                "type": "CABLE_BOX",
+                "connectStatus": "connected"
+            },
+            {
+                "id": "HDMI3",
+                "order": "2",
+                "name": "Netflix",
+                "powerStatus": "on",
+                "provider": "U+",
+                "type": "OTT",
+                "connectStatus": "disconnected"
+            }
+        ]
+    }
+}
